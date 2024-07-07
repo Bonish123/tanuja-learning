@@ -21,3 +21,7 @@ def add_user():
 @app.route("/")
 def index():
     return render_template('index-abc.html')
+
+@app.route("/about")
+def about():
+    return render_template('about.html')
