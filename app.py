@@ -17,4 +17,7 @@ def add_user():
         return jsonify({"message": full_name})
     else:
         return render_template('index.html')
-
+    
+@app.route("/")
+def index():
+    return render_template('index.html')
